@@ -118,8 +118,8 @@ def register_extensions(app):
 def run():
     app= create_app(os.environ.get('BOILERPLATE_ENV') or 'dev')
     print("The environment variable is",  os.environ.get('BOILERPLATE_ENV'))
-    #app.run(use_reloader=False,host="0.0.0.0",port=8081, debug=True)
-    app.run( use_reloader=False, host="localhost", port=5000, debug=True)
+    app.run(use_reloader=False,host="0.0.0.0",port=8080, debug=True)
+    #app.run( use_reloader=False, host="0.0.0.0", port=8080, debug=True)
 
 if __name__ == '__main__':
     run()
